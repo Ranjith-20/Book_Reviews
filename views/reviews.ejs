@@ -1,0 +1,36 @@
+<div class="layout">
+          <%- include ('partials/header') %>
+
+                    <div class="hero_review">
+                              <div class="container">
+                                        <div class="hero__text">
+                                                  <h1>BOOK REVIEWS</h1>
+                                                  <p>Deciding what to read next? You’re in the right place.</p>
+                                        </div>
+                              </div>
+                    </div>
+
+                    <section class="reviews-section">
+                              <div class="layer-reviews">
+                                        <div class="cards-container">
+                                                  <% for (let result of results){ %>
+                                                            <section class="card">
+                                                                      <h3 class="card__author">
+                                                                                Author: <%=result.author%>
+                                                                      </h3>
+                                                                      <h3 class="card__title">
+                                                                                Title: <%=result.title%>
+                                                                      </h3>
+                                                                      <p class="card__summary">
+                                                                                Summary: <%=result.summary%>
+                                                                      </p>
+                                                                      <a href="reviews/<%= result._id %>"> Read
+                                                                                more...</a>
+                                                            </section>
+                                                            <%}%>
+                                        </div>
+                              </div>
+                    </section>
+
+                    <%- include ('partials/footer') %>
+</div>

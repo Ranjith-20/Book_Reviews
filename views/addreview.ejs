@@ -1,0 +1,49 @@
+<div class="layout">
+          <%- include ('partials/header') %>
+                    <div class="add-a-review-bg">
+                              <div class="layer1">
+                                        <div class="wrapper">
+                                                  <form action="/reviews" method="POST">
+                                                            <h2>Add a review</h2>
+                                                            <div class="row">
+                                                                      <div>
+                                                                                <label for="author">Author</label>
+                                                                      </div>
+                                                                      <div>
+                                                                                <input type="text" id="author"
+                                                                                          name="author"
+                                                                                          placeholder="Author of the book">
+                                                                      </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                      <div>
+                                                                                <label for="title">Title</label>
+                                                                      </div>
+                                                                      <div>
+                                                                                <input type="text" id="title"
+                                                                                          name="title"
+                                                                                          placeholder="Title of the book">
+                                                                      </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                      <div>
+                                                                                <label for="summary">Summary</label>
+                                                                      </div>
+                                                                      <div>
+                                                                                <textarea id="summary" name="summary"
+                                                                                          placeholder="Write a summary for the book.."
+                                                                                          style="height:200px"></textarea>
+                                                                      </div>
+                                                            </div>
+                                                            <br>
+                                                            <div class="row">
+                                                                      <input class="btn" type="submit" value="Submit">
+                                                            </div>
+                                                  </form>
+
+                                        </div>
+                              </div>
+                    </div>
+
+                    <%- include ('partials/footer') %>
+</div>

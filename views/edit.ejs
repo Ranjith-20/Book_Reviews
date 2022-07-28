@@ -1,0 +1,53 @@
+<div class="layout">
+          <%- include ('partials/header') %>
+                    <div class="edit-a-review-bg">
+                              <div class="layer1">
+                                        <div class="wrapper">
+
+                                                  <form action="/reviews/<%= review._id %>?_method=PUT" method="POST">
+                                                            <h2>Edit the review</h2>
+                                                            <div class="row">
+                                                                      <div>
+                                                                                <label for="author">Author</label>
+                                                                      </div>
+                                                                      <div>
+                                                                                <input type="text" id="author"
+                                                                                          name="author"
+                                                                                          placeholder="Author of the book"
+                                                                                          value="<%= review.author %>">
+                                                                      </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                      <div>
+                                                                                <label for="title">Title</label>
+                                                                      </div>
+                                                                      <div>
+                                                                                <input type="text" id="title"
+                                                                                          name="title"
+                                                                                          placeholder="Title of the book"
+                                                                                          value="<%= review.title %>">
+                                                                      </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                      <div>
+                                                                                <label for="summary">Summary</label>
+                                                                      </div>
+                                                                      <div>
+                                                                                <textarea id="summary" name="summary"
+                                                                                          placeholder="Write a summary for the book.."
+                                                                                          style="height:200px"><%= review.summary %></textarea>
+                                                                      </div>
+                                                            </div>
+                                                            <br>
+                                                            <div class="container-btn-edit">
+                                                                      <a class="btn"
+                                                                                href="/reviews/<%= review._id %>/">Go
+                                                                                back</a>
+                                                                      <input class="btn" type="submit" value="Update">
+                                                            </div>
+                                                  </form>
+                                        </div>
+                              </div>
+                    </div>
+                    <%- include ('partials/footer') %>
+</div>

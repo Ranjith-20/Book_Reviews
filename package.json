@@ -1,0 +1,28 @@
+{
+
+  "name": "bookreview",
+  "version": "1.0.0",
+  "description": "Book review project for Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "startdev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alekusu",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^14.3.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "gh-pages": "^3.2.3",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.0.12",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.14",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.1.0",
+    "uuid": "^8.3.2"
+  }
+}
